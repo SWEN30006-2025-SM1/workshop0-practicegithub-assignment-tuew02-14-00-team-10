@@ -19,6 +19,7 @@ public class Calculator {
     public double divide(int a, int b) {
         // TODO: Implement this method
         if (b == 0) {
+
             throw new ArithmeticException("Divide by zero");
         }
         return (double) a / b;
