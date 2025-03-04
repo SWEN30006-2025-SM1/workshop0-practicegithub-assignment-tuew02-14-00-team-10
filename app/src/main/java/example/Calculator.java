@@ -22,6 +22,7 @@ public class Calculator {
 
             throw new ArithmeticException("Divide by zero");
         }
+        // HEYYY YALL
         return (double) a / b;
     }
 }
