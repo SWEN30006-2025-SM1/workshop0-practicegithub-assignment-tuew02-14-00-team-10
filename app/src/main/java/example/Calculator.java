@@ -2,22 +2,21 @@ package example;
 
 public class Calculator {
     public int add(int a, int b) {
-        int c = a + b;
-        return c;
+        return a + b;
     }
 
     public int minus(int a, int b) {
-        int c = a - b;
-        return c;
+        return a - b;
     }
 
     public int multiply(int a, int b) {
-        int c = a * b;
-        return c;
+        return a * b;
     }
 
     public double divide(int a, int b) {
-        int c = a / b;
-        return c;
+        if(b == 0) {
+            throw new ArithmeticException("Divide by zero");
+        }
+        return (double)a / b;
     }
 }
